@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="login-wrapper">
+            <div class="login-container">
+                <h2>LOGIN!</h2>
+                <form id="loginForm">
+                    <div class="input-container">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="button" class="login-btn" onclick="login()">Login</button>
+                </form>
+                <p class="signup-text">New here? <a href="#">Create an Account</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<script>
+function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Validate the username and password
+    if (username === 'tilak' && password === '0106') {
+        alert('Login successful!');
+        window.location.href = 'home.html'; // Redirect to home page
+    } else {
+        alert('Invalid username or password!');
+    }
+}
+</script>
+
