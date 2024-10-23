@@ -3,46 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tilak Raghunandan G Resume Portfolio</title>
+    <link rel="stylesheet" href="p.css">
 </head>
 <body>
-    <div class="background">
-        <div class="login-wrapper">
-            <div class="login-container">
-                <h2>LOGIN!</h2>
-                <form id="loginForm">
-                    <div class="input-container">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <button type="button" class="login-btn" onclick="login()">Login</button>
-                </form>
-                <p class="signup-text">New here? <a href="#">Create an Account</a></p>
+    <div class="container">
+        <div class="header">
+            <h1>TILAK RAGHUNANDAN G</h1>
+            <h2>Student</h2>
+            <p class="about-me">
+                Motivated and results-driven Artificial intelligence and machine learning engineer 
+                seeking an entry-level position in a reputable organization. Passionate about applying 
+                engineering principles to solve complex problems and develop sustainable solutions.
+            </p>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> +91 - 8317338824</p>
+                <p><strong>Email:</strong> tilakraghunandan0106@gmail.com</p>
+                <p><strong>Location:</strong> Sominkoppa, Shivamogga, Karnataka</p>
             </div>
         </div>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="section">
+                    <h3>LANGUAGES</h3>
+                    <ul>
+                        <li>English</li>
+                        <li>Kannada</li>
+                        <li>Hindi</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>EXPERTISE</h3>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Creative Thinking</li>
+                        <li>Team Leading</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>HOBBIES</h3>
+                    <ul>
+                        <li>Drawing</li>
+                        <li>Singing</li>
+                        <li>Playing Chess</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section">
+                    <h3>LICENSES & CERTIFICATIONS</h3>
+                    <ul>
+                        <li>IDEA LAUNCH 2024</li>
+                        <li>AI for Students: Build Your Own Generative Model</li>
+                        <li>Data Science and Analytics Quiz</li>
+                        <li>PowerPoint Essential Training (Microsoft 365)</li>
+                        <li>MongoDB</li>
+                        <li>Introduction to Python</li>
+                        <li>Voluntary Work on Malnad Startup Summit</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>EDUCATION</h3>
+                    <p><strong>10th:</strong> 70.4%<br>
+                    Paper Town English School, Shivamogga, Karnataka</p>
+                    <p><strong>Pre-university:</strong> 68.16%<br>
+                    DVS Composite PU College, Shivamogga</p>
+                    <p><strong>B.E AIML:</strong> CGPA = 7.3 (up to 2nd Sem)<br>
+                    PES Institute of Technology</p>
+                </div>
+
+                <div class="section">
+                    <h3>PROJECT</h3>
+                    <p>Creating Login Page using HTML / CSS / JavaScript.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Declaration: I hereby declare that the information furnished above is true to the best of my knowledge.</p>
+        </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
-
-
-<script>
-function login() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    // Validate the username and password
-    if (username === 'tilak' && password === '0106') {
-        alert('Login successful!');
-        window.location.href = 'home.html'; // Redirect to home page
-    } else {
-        alert('Invalid username or password!');
-    }
-}
-</script>
-
